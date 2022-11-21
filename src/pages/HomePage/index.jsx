@@ -2,8 +2,8 @@ import React from "react"
 import { Form } from "../../components/HomeForm"
 import { Lista } from "../../components/ValuesList"
 import { TypeValue } from "../../components/TipyValue"
-import "../src/stylles/header.css"
-import "../src/stylles/tipography.css"
+import "../../stylles/header.css"
+import "../../stylles/tipography.css"
 
 export const HomePage = ({setPage, list, tipyList, addCard, listAll, removeCard, setFilter, filter}) => {
     return (

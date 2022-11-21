@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { HomePage } from "./Home";
-import { InicialPage } from "./Inicio";
 import { list, tipyList }from "./data/data"
+import {HomePage} from "./pages/HomePage";
+import {InicialPage} from "./pages/InicialPage"
 
 function App() {
 
@@ -30,7 +30,7 @@ function App() {
   
   switch(page) {
     case "InicialPage":
-      return < HomePage setPage={setPage} list={list} tipyList={tipyList} listAll={filtredValue} addCard={addCard} removeCard={removeCard} setFilter={setFilter} filter={filter}/>
+      return <HomePage setPage={setPage} list={list} tipyList={tipyList} listAll={filtredValue} addCard={addCard} removeCard={removeCard} setFilter={setFilter} filter={filter}/>
       default:
         return <InicialPage setPage={setPage}/>
       } 

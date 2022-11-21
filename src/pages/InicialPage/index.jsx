@@ -1,6 +1,6 @@
-import  illustration from "../src/assets/img/illustration.svg"
-import "../src/stylles/inicial.css"
-import "../src/stylles/tipography.css"
+import  illustration from "../../assets/img/illustration.svg"
+import "../../stylles/inicial.css"
+import "../../stylles/tipography.css"
 
 export const InicialPage = ({setPage}) => {
 
