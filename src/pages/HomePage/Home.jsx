@@ -1,7 +1,7 @@
 import React from "react"
-import { Form } from "./components/HomeForm"
-import { Lista } from "./components/ValuesList"
-import { TypeValue } from "./components/TipyValue"
+import { Form } from "../../components/HomeForm"
+import { Lista } from "../../components/ValuesList"
+import { TypeValue } from "../../components/TipyValue"
 import "../src/stylles/header.css"
 import "../src/stylles/tipography.css"
 
