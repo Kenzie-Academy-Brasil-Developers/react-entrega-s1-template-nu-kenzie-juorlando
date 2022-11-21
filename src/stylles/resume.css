@@ -1,0 +1,27 @@
+.resume-ul{
+    width: 560px;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.li{
+    width: 87px;
+    height: 40px;
+    background-color: #E9ECEF;
+    color: #868E96;
+    border: solid 1px #E9ECEF;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.li:hover{
+    color: #E9ECEF;
+    background-color: #FD377E;
+}

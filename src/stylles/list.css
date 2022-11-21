@@ -1,0 +1,45 @@
+.ul-cards{
+    width: 560px;
+    height: 627px;
+    list-style: none;
+    gap: 10px;
+}
+
+.li-card{
+    width: 560px;
+    height: 87px;
+    background-color: #E9ECEF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.li-card:hover{
+    border-left: solid 6px #03B898;
+}
+
+.valor-button{
+    width: 100px;
+    height: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-remover{
+    width: 22px;
+    height: 22px;
+    background-image: url(../assets/img/garbage.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.button-remover:hover{
+    background-image: url(../assets/img/garbage2.png);
+}
