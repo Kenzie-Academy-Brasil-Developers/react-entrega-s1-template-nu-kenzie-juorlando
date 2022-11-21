@@ -1,6 +1,5 @@
 import React from 'react'
 import "../../stylles/list.css"
-import "../../stylles/tipography.css"
 
 export const Card = ({element, removeCard}) => {
   return (

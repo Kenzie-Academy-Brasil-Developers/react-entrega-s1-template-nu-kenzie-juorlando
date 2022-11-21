@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import "../../stylles/form.css"
 
-export const Form = ({list, tipyList, addCard, removeCard}) => {
+export const Form = ({listAll, tipyList, addCard, removeCard}) => {
     
     const [formCard, setFormCard] = useState({
         name: "",
@@ -22,6 +22,10 @@ export const Form = ({list, tipyList, addCard, removeCard}) => {
             tipo: tipyList[0].value,
         })
     }
+
+    const filtredList = listAll.filter((itens) => { return itens.tipo === "entrada"})
+
+    const somaReduce = filtredList.reduce((acumulador, valorAtual) => {return acumulador + valorAtual.valor}, 0)
 
   return (
         <form className='form' onSubmit={submit}>
@@ -46,7 +50,7 @@ export const Form = ({list, tipyList, addCard, removeCard}) => {
             <div className='div-valor-total'>
                 <div className='div-valor-total-title'>
                 <p className='valor-total'>Valor Total:</p>
-                <p className='total'>${}</p>
+                <p className='total'>${somaReduce}</p>
                 </div>
                 <p className='valor-total-text'>O valor total se refere ao saldo</p>
             </div>

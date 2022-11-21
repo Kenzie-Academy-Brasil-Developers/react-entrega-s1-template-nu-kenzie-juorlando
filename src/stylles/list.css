@@ -18,6 +18,46 @@
     cursor: pointer;
 }
 
+@media (max-width: 900px){
+    .ul-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .li-card{
+        width: 360px;
+        height: 87px;
+
+    }
+}
+
+@media (max-width: 450px){
+    .ul-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .li-card{
+        width: 360px;
+        height: 87px;
+
+    }
+}
+
+@media (max-width: 400px){
+    .ul-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .li-card{
+        width: 360px;
+        height: 87px;
+        margin-left: 100px;
+
+    }
+}
+
 .li-card:hover{
     border-left: solid 6px #03B898;
 }

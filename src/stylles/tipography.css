@@ -1,29 +1,69 @@
+h1, h2, h3, h4, h5, h6, p, a, span, li, button, input{
+    font-family: 'Nunito', sans-serif;
+}
+
 .title1{
     font-weight: bold;
-    font-size: 28px;
+    font-size: 1.75rem;
 }
 
 .title2{
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .title3{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .title4{
     font-weight: bold;
-    font-size: 12px;
+    font-size: 0.75rem;
+}
+
+@media (max-width: 800px){
+    .title1{
+        font-size: 1.5rem;
+    }
+
+    .title2{
+        font-size: 1.25rem;
+    }
+
+    .title3{
+        font-size: 0.75rem;
+    }
+
+    .title4{
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 400px){
+    .title1{
+        font-size: 1.25rem;
+    }
+
+    .title2{
+        font-size: 0.75rem;
+    }
+
+    .title3{
+        font-size: 0.5rem;
+    }
+    
+    .title4{
+        font-size: 0.25rem;
+    }
 }
 
 .headline{
     font-weight: regular;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .body{
     font-weight: regular;
-    font-size: 12px;
+    font-size: 0.75rem;
 }

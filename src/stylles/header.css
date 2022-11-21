@@ -5,7 +5,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Nunito', sans-serif;
 }
 
 .Title-header{
@@ -33,11 +32,26 @@
     border: solid 1px #FD377E;
 }
 
-.Container{
-    width: 100%;
-    height: 100%;
+.container{
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    font-family: 'Nunito', sans-serif;
+}
+
+@media (max-width: 900px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 450px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }

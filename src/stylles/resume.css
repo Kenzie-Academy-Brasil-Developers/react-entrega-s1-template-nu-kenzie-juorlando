@@ -25,3 +25,20 @@
     color: #E9ECEF;
     background-color: #FD377E;
 }
+
+@media (max-width: 400px){
+
+    .resume-ul{
+        padding-left: 100px;
+
+    }
+}
+
+@media (max-width: 350px){
+
+    .resume-ul{
+        padding-left: 120px;
+
+    }
+    
+}

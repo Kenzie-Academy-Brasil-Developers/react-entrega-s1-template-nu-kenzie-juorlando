@@ -1,9 +1,7 @@
 import React from "react"
 import { Form } from "../../components/HomeForm"
-import { Lista } from "../../components/ValuesList"
 import { TypeValue } from "../../components/TipyValue"
 import "../../stylles/header.css"
-import "../../stylles/tipography.css"
 
 export const HomePage = ({setPage, list, tipyList, addCard, listAll, removeCard, setFilter, filter}) => {
     return (
@@ -12,10 +10,9 @@ export const HomePage = ({setPage, list, tipyList, addCard, listAll, removeCard,
         <h1 className="Title-header title1"><span className="Span-header">NU</span> Kenzie</h1>
         <button className="Button-inicio body" type="button" onClick={() => setPage("HomePage")}>Inicio</button>
         </header>
-        <div className="Container">
-        <Form list={list} tipyList={tipyList} addCard={addCard} removeCard={removeCard}/>
+        <div className="container">
+        <Form list={list} tipyList={tipyList} addCard={addCard} removeCard={removeCard} listAll={listAll}/>
         <TypeValue tipyList={tipyList} setFilter={setFilter} list={list} listAll={listAll} removeCard={removeCard}/>
-        {/* <Lista list={list} listAll={listAll} removeCard={removeCard} setFilter={setFilter}/> */}
         </div>
         </React.Fragment>
     )

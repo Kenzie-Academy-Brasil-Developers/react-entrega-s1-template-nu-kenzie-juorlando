@@ -9,6 +9,32 @@
     font-family: 'Nunito', sans-serif;
 }
 
+@media (max-width: 900px){
+    .App{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Img-inicial{
+        display: none;
+    }
+}
+
+@media (max-width: 450px){
+    .App{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Img-inicial{
+        display: none;
+    }
+}
+
 .Div-inicial{
     width: 50%;
     height: 598px;
