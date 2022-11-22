@@ -12,7 +12,7 @@ export const HomePage = ({setPage, list, tipyList, addCard, listAll, removeCard,
         </header>
         <div className="container">
         <Form list={list} tipyList={tipyList} addCard={addCard} removeCard={removeCard} listAll={listAll}/>
-        <TypeValue tipyList={tipyList} setFilter={setFilter} list={list} listAll={listAll} removeCard={removeCard}/>
+        <TypeValue tipyList={tipyList} setFilter={setFilter} list={list} listAll={listAll} removeCard={removeCard} filter={filter}/>
         </div>
         </React.Fragment>
     )

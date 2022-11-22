@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    gap: 12px;
 }
 
 .input-name{
@@ -114,6 +115,13 @@
 }
 
 @media (max-width: 350px){
+
+    .container{
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
     .form{
         width: 263px;
         height: 347px;
@@ -124,7 +132,7 @@
     }
 
     .description{
-        padding-left: 60px;
+        padding-left: 100px;
         padding-top: 30px; 
     }
 

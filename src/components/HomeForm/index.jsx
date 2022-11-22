@@ -23,9 +23,15 @@ export const Form = ({listAll, tipyList, addCard, removeCard}) => {
         })
     }
 
-    const filtredList = listAll.filter((itens) => { return itens.tipo === "entrada"})
-
-    const somaReduce = filtredList.reduce((acumulador, valorAtual) => {return acumulador + valorAtual.valor}, 0)
+    const somaTotal = listAll.reduce((acumulador, valorAtual) => { 
+        
+        if(valorAtual.tipo === "entrada"){
+            return acumulador + valorAtual.valor
+        } else {
+            return acumulador - valorAtual.valor
+        }
+    
+    }, 0)
 
   return (
         <form className='form' onSubmit={submit}>
@@ -50,7 +56,7 @@ export const Form = ({listAll, tipyList, addCard, removeCard}) => {
             <div className='div-valor-total'>
                 <div className='div-valor-total-title'>
                 <p className='valor-total'>Valor Total:</p>
-                <p className='total'>${somaReduce}</p>
+                <p className='total'>${somaTotal}</p>
                 </div>
                 <p className='valor-total-text'>O valor total se refere ao saldo</p>
             </div>

@@ -2,18 +2,19 @@ import React from 'react'
 import "../../stylles/resume.css"
 import { Lista } from '../ValuesList'
 
-export const TypeValue = ({list, listAll, tipyList, removeCard, setFilter}) => {
+export const TypeValue = ({list, listAll, tipyList, removeCard, setFilter, filter}) => {
   return (
-      <div>
+      <div className='div-container'>
       <ul className='resume-ul'>
         <h4 className='title'>Resumo Financiero</h4>
-        <li className='li headline' onClick={() => setFilter("todos")}>Todos</li>
-          {tipyList.map(elens => (
-             <li className='li' key={elens.value} onClick={() => setFilter(elens.value)}>{elens.label}</li>
-          ))}
+        <a href='#a' type=''>
+        <button className={filter === "todos" ? "li btn-color" : "li"} onClick={() => setFilter("todos")}>Todos</button>
+          <button className={filter === "entrada" ? "li btn-color" : "li"} key={tipyList[0].value} onClick={() => setFilter(tipyList[0].value)}>{tipyList[0].label}</button>
+          <button className={filter === "saída" ? "li btn-color" : "li"} key={tipyList[1].value} onClick={() => setFilter(tipyList[1].value)}>{tipyList[1].label}</button>
+        </a>
       </ul>
-          <div>
-            <Lista list={list} listAll={listAll} removeCard={removeCard} setFilter={setFilter}/>
+          <div className='list-container'>
+            <Lista list={list} listAll={listAll} removeCard={removeCard} setFilter={setFilter} filter={filter}/>
           </div>
       </div>
   )

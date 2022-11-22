@@ -1,20 +1,30 @@
-import  illustration from "../../assets/img/illustration.svg"
-import "../../stylles/inicial.css"
+import illustration from "../../assets/img/illustration.svg";
+import "../../stylles/inicial.css";
 
-export const InicialPage = ({setPage}) => {
-
-    return (
-        <div className="App">
-          <div className="Div-inicial">
-            <h2 className="Title title2"><span className="Span">NU</span> Kenzie</h2>
-            <h1 className="Text-title title1">Centralize o controle de suas finanças</h1>
-            <p className="Text headline">de forma rápida e segura</p>
-            <button className="Button-iniciar headline" type="button" onClick={() => setPage("InicialPage")}>Iniciar</button>
-          </div>
-          <div className="Div-Img">
-            <img className="Img-inicial" src={illustration} alt="ilustração"/>
-          </div>
+export const InicialPage = ({ setPage }) => {
+  return (
+    <div className="App body-bg-black">
+      <div className="Div-inicial">
+        <div className="div-texts">
+          <h2 className="Title title2">
+            <span className="Span">NU</span> Kenzie
+          </h2>
+          <h1 className="Text-title title1">
+            Centralize o controle de suas finanças
+          </h1>
+          <p className="Text headline">de forma rápida e segura</p>
+          <button
+            className="Button-iniciar headline"
+            type="button"
+            onClick={() => setPage("InicialPage")}
+          >
+            Iniciar
+          </button>
         </div>
-      );
-
-}
+      </div>
+      <div className="Div-Img">
+        <img className="Img-inicial" src={illustration} alt="ilustração" />
+      </div>
+    </div>
+  );
+};

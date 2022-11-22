@@ -42,19 +42,19 @@ h1, h2, h3, h4, h5, h6, p, a, span, li, button, input{
 
 @media (max-width: 400px){
     .title1{
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     .title2{
-        font-size: 0.75rem;
+        font-size: 1.25rem;
     }
 
     .title3{
-        font-size: 0.5rem;
+        font-size: 0.75rem;
     }
-    
+
     .title4{
-        font-size: 0.25rem;
+        font-size: 0.5rem;
     }
 }
 

@@ -3,6 +3,7 @@
     height: 627px;
     list-style: none;
     gap: 10px;
+    padding: 20px;
 }
 
 .li-card{
@@ -44,22 +45,29 @@
     }
 }
 
-@media (max-width: 400px){
+@media (max-width: 350px){
     .ul-cards{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     .li-card{
-        width: 360px;
+        width: 240px;
         height: 87px;
-        margin-left: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 8px;
 
     }
 }
 
-.li-card:hover{
+.li-card-color{
     border-left: solid 6px #03B898;
+}
+
+.li-card-color-out{
+    border-left: solid 6px #868E96;
 }
 
 .valor-button{

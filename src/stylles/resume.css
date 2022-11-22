@@ -6,6 +6,13 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+    padding-top: 20px;
+}
+
+a{
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
 }
 
 .li{
@@ -26,19 +33,92 @@
     background-color: #FD377E;
 }
 
-@media (max-width: 400px){
+.btn-color{
+    color: #E9ECEF;
+    background-color: #FD377E;
+}
+
+@media (max-width: 900px){
+
+    .div-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
 
     .resume-ul{
-        padding-left: 100px;
-
+        width: 50%;
+        height: 100px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding-top: 20px;
+    }
+    
+    a{
+        display: flex;
+        gap: 20px;
+        text-decoration: none;
+    }
+    
+    .li{
+        width: 87px;
+        height: 40px;
+        background-color: #E9ECEF;
+        color: #868E96;
+        border: solid 1px #E9ECEF;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
     }
 }
 
 @media (max-width: 350px){
 
-    .resume-ul{
-        padding-left: 120px;
+    .div-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
 
+    .resume-ul{
+        width: 50%;
+        height: 100px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding-top: 10px;
+    }
+    
+    a{
+        display: flex;
+        gap: 10px;
+        text-decoration: none;
+    }
+    
+    .li{
+        width: 87px;
+        height: 40px;
+        background-color: #E9ECEF;
+        color: #868E96;
+        border: solid 1px #E9ECEF;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
     }
     
 }
