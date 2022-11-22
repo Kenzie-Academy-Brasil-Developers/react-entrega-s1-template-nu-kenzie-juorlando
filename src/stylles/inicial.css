@@ -1,39 +1,111 @@
-.body-bg-black{
-    background-color: #212529;
-    min-width: 100%;
-    min-height: 100%;
+.body-bg-black {
+  background-color: #212529;
+  min-width: 100%;
+  min-height: 100%;
 }
 
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.App{
-    padding: .6rem;
+.App {
+  padding: 0.6rem;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  background-color: #212529;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.Div-inicial {
+  width: 100%;
+  height: 37.375rem;
+  color: #f3f3f3;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  padding: 20px;
+}
+
+.div-texts {
+  width: 30%;
+  height: 37.375rem;
+  color: #f3f3f3;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  padding: 20px;
+}
+
+.Title {
+  width: 7.625rem;
+  height: 1.2206rem;
+  margin-right: 9.375rem;
+}
+
+.Span {
+  color: #fd377e;
+}
+
+.Text-title {
+  width: 15.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.Text {
+  width: 17.5rem;
+  height: 2.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.Button-iniciar {
+  width: 15.0625rem;
+  height: 3rem;
+  background-color: #fd377e;
+  color: #f3f3f3;
+  border: solid 0.0625rem #fd377e;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.Div-Img {
+  width: 100%;
+  height: 37.0625rem;
+  color: #f3f3f3;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.Img-inicial {
+  width: 37.0625rem;
+  height: 37.0625rem;
+}
+
+@media (max-width: 900px) {
+  .App {
+    padding: 0.6rem;
     width: 100%;
-    max-width: 1100px;
+    max-width: 900px;
     margin: 0 auto;
     display: flex;
     background-color: #212529;
     justify-content: center;
     align-items: center;
     align-content: center;
-}
+  }
 
-.Div-inicial{
-    width: 100%;
-    height: 37.375rem;
-    color: #f3f3f3;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 32px;
-    padding: 20px;
-}
-
-.div-texts{
+  .div-texts {
     width: 30%;
     height: 37.375rem;
     color: #f3f3f3;
@@ -43,164 +115,85 @@
     justify-content: center;
     gap: 32px;
     padding: 20px;
+  }
+
+  .Div-Img {
+    width: 0%;
+  }
+
+  .Img-inicial {
+    display: none;
+  }
 }
 
-.Title{
-    width: 7.625rem;
-    height: 1.2206rem;
-    margin-right: 9.375rem;
-} 
-
-.Span{
-    color: #FD377E;
-}
-
-.Text-title{
-    width: 15.5rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.Text{
-    width: 17.5rem;
-    height: 2.75rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.Button-iniciar{
-    width: 15.0625rem;
-    height: 3rem;
-    background-color: #FD377E;
-    color: #f3f3f3;
-    border: solid 0.0625rem #FD377E;
-    border-radius: 0.5rem;
-    cursor: pointer;
-}
-
-.Div-Img{
+@media (max-width: 450px) {
+  .App {
+    padding: 0.6rem;
     width: 100%;
-    height: 37.0625rem;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    background-color: #212529;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .div-texts {
+    width: 90%;
+    height: 37.375rem;
     color: #f3f3f3;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    padding: 20px;
+  }
+
+  .Div-Img {
+    width: 0%;
+  }
+
+  .Img-inicial {
+    display: none;
+  }
 }
 
-.Img-inicial{
-    width: 37.0625rem;
-    height: 37.0625rem;
-}
+@media (max-width: 350px) {
+  .div-texts {
+    width: 50%;
+  }
 
-@media (max-width: 900px){
-    .App{
-        padding: .6rem;
-        width: 100%;
-        max-width: 900px;
-        margin: 0 auto;
-        display: flex;
-        background-color: #212529;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-    }
+  .App {
+    padding: 0.6rem;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    display: flex;
+    background-color: #212529;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
 
-    .div-texts{
-        width: 30%;
-        height: 37.375rem;
-        color: #f3f3f3;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 32px;
-        padding: 20px;
-    }
+  .div-texts {
+    width: 90%;
+    height: 37.375rem;
+    color: #f3f3f3;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    padding: 20px;
+  }
 
+  .Img-inicial {
+    display: none;
+  }
 
-    .Div-Img{
-        width: 0%;
-    }
-
-
-    .Img-inicial{
-        display: none;
-    }
-}
-
-@media (max-width: 450px){
-    .App{
-        padding: .6rem;
-        width: 100%;
-        max-width: 400px;
-        margin: 0 auto;
-        display: flex;
-        background-color: #212529;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-    }
-
-    .div-texts{
-        width: 90%;
-        height: 37.375rem;
-        color: #f3f3f3;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 32px;
-        padding: 20px;
-    }
-
-
-    .Div-Img{
-        width: 0%;
-    }
-
-
-    .Img-inicial{
-        display: none;
-    }
-}
-
-@media (max-width: 350px){
-
-    .div-texts{
-        width: 50%;
-    }
-
-    .App{
-        padding: .6rem;
-        width: 100%;
-        max-width: 350px;
-        margin: 0 auto;
-        display: flex;
-        background-color: #212529;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-    }
-
-    .div-texts{
-        width: 90%;
-        height: 37.375rem;
-        color: #f3f3f3;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 32px;
-        padding: 20px;
-    }
-
-    .Img-inicial{
-        display: none;
-    }
-
-    .Div-Img{
-        width: 0%;
-    }
-
-
+  .Div-Img {
+    width: 0%;
+  }
 }
