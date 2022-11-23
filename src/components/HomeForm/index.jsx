@@ -36,6 +36,7 @@ export const Form = ({ listAll, tipyList, addCard, removeCard }) => {
         className="input-name"
         type="text"
         value={formCard.name}
+        required
         placeholder="Digite aqui sua Descrição"
         onChange={(event) =>
           setFormCard({ ...formCard, name: event.target.value })
@@ -51,6 +52,7 @@ export const Form = ({ listAll, tipyList, addCard, removeCard }) => {
           className="input-valor"
           type="number"
           value={formCard.valor}
+          required
           placeholder="R$"
           onChange={(event) =>
             setFormCard({ ...formCard, valor: event.target.valueAsNumber })
