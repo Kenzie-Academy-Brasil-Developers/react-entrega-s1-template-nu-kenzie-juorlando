@@ -33,7 +33,7 @@ export const TypeValue = ({
             key={tipyList[1].value}
             onClick={() => setFilter(tipyList[1].value)}
           >
-            {tipyList[1].label}
+            Despesas
           </button>
         </a>
       </ul>

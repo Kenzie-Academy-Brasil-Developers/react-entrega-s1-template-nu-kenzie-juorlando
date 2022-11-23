@@ -58,7 +58,7 @@ export const Form = ({ listAll, tipyList, addCard, removeCard }) => {
         />
         <select
           className="select"
-          defaultValue={formCard.tipo}
+          value={formCard.tipo}
           onChange={(event) =>
             setFormCard({ ...formCard, tipo: event.target.value })
           }
